@@ -913,7 +913,7 @@ class fMailbox
 		$this->type     = $type;
 		$this->host     = $host;
 		$this->username = $username;
-		$this->password = $password;
+		$this->password = '"' . $password . '"';
 		$this->port     = $port;
 		$this->secure   = $secure;
 		$this->timeout  = $timeout;
